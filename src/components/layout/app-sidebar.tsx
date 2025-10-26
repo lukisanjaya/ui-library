@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { cn } from '../../utils/cn'
 import { Button } from '../ui/button'
 import { Badge } from '../ui/badge'
@@ -84,6 +84,24 @@ export function AppSidebar({
     return currentPath === href
   }
 
+  const isParentActive = (item: MenuItem) => {
+    if (item.children) {
+      return item.children.some(child => currentPath === child.href)
+    }
+    return false
+  }
+
+  // Auto-expand parent menu if child is active
+  useEffect(() => {
+    menuItems.forEach(item => {
+      if (item.children && isParentActive(item)) {
+        setExpandedItems(prev => 
+          prev.includes(item.label) ? prev : [...prev, item.label]
+        )
+      }
+    })
+  }, [currentPath, menuItems])
+
   const handleLogout = () => {
     onLogout?.()
     setShowLogoutModal(false)
@@ -130,7 +148,9 @@ export function AppSidebar({
                       className={cn(
                         "w-full justify-start h-11 rounded-lg transition-all duration-200 group",
                         isCollapsed ? "px-3" : "px-3",
-                        "hover:bg-accent/50 hover:shadow-sm"
+                        isParentActive(item)
+                          ? "bg-primary/5 text-primary border border-primary/10"
+                          : "hover:bg-accent/50 hover:shadow-sm"
                       )}
                       onClick={() => toggleExpanded(item.label)}
                     >

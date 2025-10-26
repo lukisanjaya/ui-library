@@ -11,6 +11,7 @@ interface LayoutProps {
   user?: any
   onLogout?: () => void
   menuItems?: any[]
+  currentPath?: string
 }
 
 export function Layout({ 
@@ -19,7 +20,8 @@ export function Layout({
   isLoading = false, 
   user, 
   onLogout,
-  menuItems = []
+  menuItems = [],
+  currentPath = '/'
 }: LayoutProps) {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(() => {
     if (typeof window !== 'undefined') {
@@ -72,6 +74,7 @@ export function Layout({
           menuItems={menuItems}
           user={user}
           onLogout={onLogout}
+          currentPath={currentPath}
         />
       </div>
       

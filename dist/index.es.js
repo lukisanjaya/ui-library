@@ -6097,7 +6097,7 @@ function ta({
             children: /* @__PURE__ */ r.jsx("div", { className: "h-9 w-9 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center", children: /* @__PURE__ */ r.jsx(ke, { className: "h-4 w-4 text-primary-foreground" }) })
           }
         ) }),
-        /* @__PURE__ */ r.jsxs(xe, { align: "end", className: "w-64 p-2", children: [
+        /* @__PURE__ */ r.jsxs(xe, { align: "end", side: "bottom", sideOffset: 8, className: "w-64 p-2 mr-2", children: [
           /* @__PURE__ */ r.jsxs("div", { className: "flex items-center gap-3 p-3 rounded-lg bg-accent/30", children: [
             /* @__PURE__ */ r.jsx("div", { className: "h-10 w-10 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center", children: /* @__PURE__ */ r.jsx(ke, { className: "h-5 w-5 text-primary-foreground" }) }),
             /* @__PURE__ */ r.jsxs("div", { className: "flex flex-col space-y-1 leading-none min-w-0", children: [

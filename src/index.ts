@@ -65,8 +65,10 @@ export { Spinner } from "./components/feedback/spinner"
 export { Alert, AlertTitle, AlertDescription } from "./components/feedback/alert"
 export { Loader } from "./components/feedback/loader"
 
+// Providers
+export { ThemeProvider, useTheme } from "./components/providers/theme-provider"
+
 // Hooks
-export { useTheme } from "./hooks/useTheme"
 export { useToast } from "./hooks/useToast"
 export { useLocalStorage } from "./hooks/useLocalStorage"
 

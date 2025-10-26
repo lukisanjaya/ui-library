@@ -10,6 +10,7 @@ import {
 } from '../ui/dropdown-menu'
 import { Badge } from '../ui/badge'
 import { LogoutModal } from '../ui/logout-modal'
+import { useTheme } from '../providers/theme-provider'
 import { 
   Sun, 
   Moon, 
@@ -26,8 +27,6 @@ interface AppNavbarProps {
   onToggleSidebar?: () => void
   user?: any
   onLogout?: () => void
-  theme?: 'light' | 'dark'
-  onThemeChange?: (theme: 'light' | 'dark') => void
   notifications?: any[]
 }
 
@@ -59,14 +58,13 @@ export function AppNavbar({
   onToggleSidebar, 
   user, 
   onLogout,
-  theme = 'light',
-  onThemeChange,
   notifications = mockNotifications
 }: AppNavbarProps) {
   const [showLogoutModal, setShowLogoutModal] = useState(false)
+  const { theme, setTheme } = useTheme()
 
   const toggleTheme = (): void => {
-    onThemeChange?.(theme === 'dark' ? 'light' : 'dark')
+    setTheme(theme === 'dark' ? 'light' : 'dark')
   }
 
   const handleLogout = () => {

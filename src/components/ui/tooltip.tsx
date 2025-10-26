@@ -29,8 +29,9 @@ export const TooltipTrigger = React.forwardRef<HTMLDivElement, TooltipTriggerPro
     const { onOpenChange } = React.useContext(TooltipContext)
     
     if (asChild && React.isValidElement(children)) {
+      const childProps = children.props as any
       return React.cloneElement(children, {
-        ...children.props,
+        ...childProps,
         onMouseEnter: () => onOpenChange(true),
         onMouseLeave: () => onOpenChange(false)
       })

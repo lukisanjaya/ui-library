@@ -39,16 +39,7 @@ const Carousel = React.forwardRef<HTMLDivElement, CarouselProps>(
       setItemsLength(items)
     }, [children])
 
-    const scrollPrev = () => {
-      setCurrentIndex(prev => prev > 0 ? prev - 1 : itemsLength - 1)
-    }
-
-    const scrollNext = () => {
-      setCurrentIndex(prev => prev < itemsLength - 1 ? prev + 1 : 0)
-    }
-
-    const canScrollPrev = currentIndex > 0
-    const canScrollNext = currentIndex < itemsLength - 1
+    // Carousel navigation functions are handled in individual components
 
     return (
       <CarouselContext.Provider value={{ currentIndex, setCurrentIndex, itemsLength, orientation }}>

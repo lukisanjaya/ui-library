@@ -28,7 +28,9 @@ import {
   User,
   LogOut,
   UserCircle,
-  Zap
+  Zap,
+  Database,
+  BarChart3
 } from 'lucide-react'
 
 interface MenuItem {
@@ -58,7 +60,9 @@ const iconMap: Record<string, React.ComponentType<any>> = {
   MessageCircle,
   CheckSquare,
   Quote,
-  Settings
+  Settings,
+  Database,
+  BarChart3
 }
 
 export function AppSidebar({ 

@@ -4075,7 +4075,7 @@ Ao.displayName = "BreadcrumbEllipsis";
 const Ye = a.createContext({ isOpen: !1, setIsOpen: () => {
 } }), Se = ({ children: e }) => {
   const [t, s] = a.useState(!1);
-  return /* @__PURE__ */ r.jsx(Ye.Provider, { value: { isOpen: t, setIsOpen: s }, children: /* @__PURE__ */ r.jsxs("div", { className: "relative inline-block text-left", children: [
+  return /* @__PURE__ */ r.jsx(Ye.Provider, { value: { isOpen: t, setIsOpen: s }, children: /* @__PURE__ */ r.jsxs("div", { className: "relative block text-left", children: [
     e,
     t && ht(
       /* @__PURE__ */ r.jsx(

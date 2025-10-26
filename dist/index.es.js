@@ -5940,7 +5940,7 @@ function Qn({
         {
           align: "start",
           side: "top",
-          className: "w-56 absolute bottom-full left-0 mb-2",
+          className: "w-56 !fixed !bottom-20 !left-4 !right-auto !top-auto",
           children: [
             /* @__PURE__ */ r.jsxs(G, { children: [
               /* @__PURE__ */ r.jsx(ke, { className: "mr-2 h-4 w-4" }),

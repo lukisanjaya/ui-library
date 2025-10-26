@@ -251,7 +251,14 @@ export function AppSidebar({
             <DropdownMenuContent 
               align="start" 
               side="top" 
-              className="w-56 !fixed !bottom-20 !left-4 !top-auto" 
+              className="w-56" 
+              style={{
+                position: 'fixed',
+                bottom: '80px',
+                left: '16px',
+                top: 'auto',
+                transform: 'none'
+              }}
             >
               <DropdownMenuItem>
                 <User className="mr-2 h-4 w-4" />

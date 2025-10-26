@@ -2,9 +2,9 @@ import * as React from "react";
 declare const DropdownMenu: ({ children }: {
     children: React.ReactNode;
 }) => import("react/jsx-runtime").JSX.Element;
-declare const DropdownMenuTrigger: React.ForwardRefExoticComponent<React.HTMLAttributes<HTMLDivElement> & {
+declare const DropdownMenuTrigger: React.ForwardRefExoticComponent<React.ButtonHTMLAttributes<HTMLButtonElement> & {
     asChild?: boolean;
-} & React.RefAttributes<HTMLDivElement>>;
+} & React.RefAttributes<HTMLButtonElement>>;
 declare const DropdownMenuContent: React.ForwardRefExoticComponent<React.HTMLAttributes<HTMLDivElement> & {
     align?: "start" | "end";
     side?: "top" | "bottom";

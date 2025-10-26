@@ -27,8 +27,8 @@ const DropdownMenu = ({ children }: { children: React.ReactNode }) => {
 }
 
 const DropdownMenuTrigger = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement> & { asChild?: boolean }
+  HTMLButtonElement,
+  React.ButtonHTMLAttributes<HTMLButtonElement> & { asChild?: boolean }
 >(({ className, children, asChild, ...props }, ref) => {
   const { setIsOpen } = React.useContext(DropdownMenuContext)
   
@@ -44,14 +44,15 @@ const DropdownMenuTrigger = React.forwardRef<
   }
   
   return (
-    <div
+    <button
       ref={ref}
+      type="button"
       className={cn("inline-flex items-center cursor-pointer", className)}
       onClick={() => setIsOpen(true)}
       {...props}
     >
       {children}
-    </div>
+    </button>
   )
 })
 DropdownMenuTrigger.displayName = "DropdownMenuTrigger"

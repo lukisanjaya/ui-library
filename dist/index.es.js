@@ -4100,9 +4100,10 @@ const Ye = a.createContext({ isOpen: !1, setIsOpen: () => {
     });
   }
   return /* @__PURE__ */ r.jsx(
-    "div",
+    "button",
     {
       ref: n,
+      type: "button",
       className: c("inline-flex items-center cursor-pointer", e),
       onClick: () => l(!0),
       ...o,

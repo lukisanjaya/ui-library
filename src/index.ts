@@ -56,6 +56,9 @@ export { Header } from "./components/layout/header"
 export { Sidebar } from "./components/layout/sidebar"
 export { Footer } from "./components/layout/footer"
 export { Navigation, NavItem } from "./components/layout/navigation"
+export { Layout } from "./components/layout/layout"
+export { AppSidebar } from "./components/layout/app-sidebar"
+export { AppNavbar } from "./components/layout/app-navbar"
 
 // Feedback Components
 export { Spinner } from "./components/feedback/spinner"

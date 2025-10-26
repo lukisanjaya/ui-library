@@ -1,3 +1,6 @@
+// Styles
+import "./styles/globals.css"
+
 // UI Components
 export { Button, buttonVariants } from "./components/ui/button"
 export { Card, CardHeader, CardTitle, CardContent } from "./components/ui/card"

@@ -12,7 +12,7 @@ const DropdownMenu = ({ children }: { children: React.ReactNode }) => {
   
   return (
     <DropdownMenuContext.Provider value={{ isOpen, setIsOpen }}>
-      <div className="relative inline-block text-left">
+      <div className="relative block text-left">
         {children}
         {isOpen && createPortal(
           <div

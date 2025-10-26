@@ -251,8 +251,7 @@ export function AppSidebar({
             <DropdownMenuContent 
               align="start" 
               side="top" 
-              className="w-56"
-              sideOffset={0}
+              className="w-56 mb-2"
             >
               <DropdownMenuItem>
                 <User className="mr-2 h-4 w-4" />

@@ -4121,7 +4121,7 @@ const xe = a.forwardRef(({ className: e, align: t = "start", side: s = "bottom",
       className: c(
         "fixed z-[99999] min-w-[8rem] overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-lg",
         t === "end" ? "right-2 sm:right-4" : "left-2 sm:left-4",
-        s === "top" ? "bottom-16" : "top-16",
+        s === "top" ? "top-16" : "bottom-16",
         e
       ),
       ...o
@@ -5939,7 +5939,7 @@ function Qn({
         xe,
         {
           align: "start",
-          side: "bottom",
+          side: "top",
           className: "w-56",
           children: [
             /* @__PURE__ */ r.jsxs(G, { children: [

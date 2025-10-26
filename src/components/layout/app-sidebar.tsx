@@ -250,7 +250,7 @@ export function AppSidebar({
             </DropdownMenuTrigger>
             <DropdownMenuContent 
               align="start" 
-              side="top" 
+              side="bottom" 
               className="w-56"
             >
               <DropdownMenuItem>

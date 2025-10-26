@@ -249,9 +249,9 @@ export function AppSidebar({
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent 
-              align="center" 
+              align="start" 
               side="top" 
-              className="w-56"
+              className="w-56 ml-4"
             >
               <DropdownMenuItem>
                 <User className="mr-2 h-4 w-4" />

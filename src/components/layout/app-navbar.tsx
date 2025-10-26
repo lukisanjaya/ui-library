@@ -132,7 +132,7 @@ export function AppNavbar({
               )}
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="w-72 sm:w-80 md:w-96 max-w-[calc(100vw-1rem)] z-[9999] mr-2 sm:mr-0">
+          <DropdownMenuContent align="end" className="w-64 sm:w-72 md:w-80 max-w-[calc(100vw-2rem)] z-[9999]">
             <DropdownMenuLabel className="flex items-center justify-between px-3 py-2">
               <span className="text-sm font-medium">Notifications</span>
               <Button variant="ghost" size="sm" className="h-6 text-xs px-2">
@@ -187,7 +187,7 @@ export function AppNavbar({
               </div>
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" side="bottom" className="w-64 p-2 mr-2 mt-2">
+          <DropdownMenuContent align="end" side="bottom" className="w-64 p-2">
             <div className="flex items-center gap-3 p-3 rounded-lg bg-accent/30">
               <div className="h-10 w-10 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center">
                 <User className="h-5 w-5 text-primary-foreground" />

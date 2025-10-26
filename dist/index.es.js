@@ -6071,7 +6071,7 @@ function ta({
             ]
           }
         ) }),
-        /* @__PURE__ */ r.jsxs(xe, { align: "end", className: "w-72 sm:w-80 md:w-96 max-w-[calc(100vw-1rem)] z-[9999] mr-2 sm:mr-0", children: [
+        /* @__PURE__ */ r.jsxs(xe, { align: "end", className: "w-64 sm:w-72 md:w-80 max-w-[calc(100vw-2rem)] z-[9999]", children: [
           /* @__PURE__ */ r.jsxs(Bt, { className: "flex items-center justify-between px-3 py-2", children: [
             /* @__PURE__ */ r.jsx("span", { className: "text-sm font-medium", children: "Notifications" }),
             /* @__PURE__ */ r.jsx(M, { variant: "ghost", size: "sm", className: "h-6 text-xs px-2", children: "Mark all read" })
@@ -6104,7 +6104,7 @@ function ta({
             children: /* @__PURE__ */ r.jsx("div", { className: "h-9 w-9 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center", children: /* @__PURE__ */ r.jsx(ke, { className: "h-4 w-4 text-primary-foreground" }) })
           }
         ) }),
-        /* @__PURE__ */ r.jsxs(xe, { align: "end", side: "bottom", className: "w-64 p-2 mr-2 mt-2", children: [
+        /* @__PURE__ */ r.jsxs(xe, { align: "end", side: "bottom", className: "w-64 p-2", children: [
           /* @__PURE__ */ r.jsxs("div", { className: "flex items-center gap-3 p-3 rounded-lg bg-accent/30", children: [
             /* @__PURE__ */ r.jsx("div", { className: "h-10 w-10 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center", children: /* @__PURE__ */ r.jsx(ke, { className: "h-5 w-5 text-primary-foreground" }) }),
             /* @__PURE__ */ r.jsxs("div", { className: "flex flex-col space-y-1 leading-none min-w-0", children: [
